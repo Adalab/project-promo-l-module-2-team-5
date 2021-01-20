@@ -1,4 +1,18 @@
-.main__list {
-  padding-left: 2rem;
-  padding-bottom: 20px;
+.landing--page {
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main--landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  background-color: $backgroundLanding;
+  height: 90vh;
+  width: 100%;
+  padding: 0 35px 0;
 }
