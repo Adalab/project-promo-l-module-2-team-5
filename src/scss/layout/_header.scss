@@ -1,5 +1,11 @@
 .page__header {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 3rem;
+  padding: 30px 79px 30px 40px;
+  &--logo {
+    width: 201px;
+    height: 50px;
+  }
 }
