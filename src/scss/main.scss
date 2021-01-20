@@ -1,17 +1,12 @@
-<<<<<<< HEAD
 @import 'core/variables';
 @import 'core/reset';
 @import 'components/code';
 @import 'layout/page';
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/design';
+@import 'layout/fillin';
+@import 'layout/preview';
+@import 'layout/share';
 @import 'pages/index';
-=======
-@import "core/variables";
-@import "core/reset";
-@import "components/code";
-@import "layout/page";
-@import "layout/header";
-@import "layout/footer";
-@import "pages/index";
->>>>>>> d8489bcfc987e5cecf8e51d061be992d7bb9b71c
+@import 'cards/index';
