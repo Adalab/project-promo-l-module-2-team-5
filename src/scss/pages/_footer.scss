@@ -23,3 +23,18 @@
   height: 40px;
   margin: 12px 47px 0 48px;
 }
+
+@media (min-width: 768px) {
+  .footer__container {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__logo {
+    margin: 0;
+  }
+}
