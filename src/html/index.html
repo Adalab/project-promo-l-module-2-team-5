@@ -3,30 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
+    <title>Awesome cards</title>
+    <script
+      src="https://kit.fontawesome.com/d31a9c1094.js"
+      crossorigin="anonymous"
+    ></script>
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
-
 
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
-  <body>
-    <div class="page">
-      <include src="./partials/header.html"></include>
-      <include src="./partials/preview.html"></include>
-      <include src="./partials/design.html"></include>
-      <include src="./partials/fillin.html"></include>
-      <include src="./partials/share.html"></include>
-      <include src="./partials/footer.html"></include>
-    </div>
+  <body class="landingPage">
+    <main class="main">
+      <div class="main__content">
+        <img
+          class="main__content--logo"
+          src="./assets/images/logo-awesome-profile-cards.svg"
+          alt="logo awesome cards"
+          title="logo awesome cards"
+        />
+        <h2 class="main__content--subtitle">Crea tu tarjeta de visita</h2>
+        <p class="main__content--text">
+          Crea mejores contactos profesionales de forma fácil y cómoda
+        </p>
+        <div class="main__actions">
+          <article>
+            <i class="far fa-object-ungroup"></i>
+            <p class="main__actions--textIcons">Diseña</p>
+          </article>
+          <article>
+            <i class="far fa-keyboard"></i>
+            <p class="main__actions--textIcons">Rellena</p>
+          </article>
+          <article>
+            <i class="fas fa-share-alt"></i>
+            <p class="main__actions--textIcons">Comparte</p>
+          </article>
+        </div>
+      </div>
+      <a class="main__content--button" href="./cards.html" title="start"
+        >Comenzar
+      </a>
+    </main>
+    <include src="./partials/footer.html"></include>
+
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
