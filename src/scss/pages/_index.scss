@@ -1,27 +1,87 @@
-.landing--page {
+.landingPage {
   height: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.main--landing {
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: $backgroundLanding;
+  width: 100%;
+  padding: 0 35px 0;
+  min-height: 80vh;
+  max-height: 90vh;
+}
+
+.main__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   text-align: center;
-  background-color: $backgroundLanding;
-  height: 90vh;
-  width: 100%;
-  padding: 0 35px 0;
 }
 
-.button--landing__start {
+.main__content--logo {
+  margin: 95px 35px 35.4px;
+  width: 250px;
+}
+
+.main__content--subtitle {
+  width: 223px;
+  height: 24px;
+  margin: 0 22.9px 0px 22.1px;
+  font-family: $fontMerriweather;
+  font-size: 19.2px;
+  font-weight: 900;
+  text-align: center;
+  color: $orange;
+}
+
+.main__content--text {
+  width: 264.8px;
+  height: 38.4px;
+  margin: 0px 1.6px 17.8px 1.6px;
+  font-family: $fontOpen;
+  font-size: 12.8px;
+  color: $darkGlueGreen;
+}
+
+.main__actions {
+  width: 268px;
+  height: 73.8px;
+  border-radius: 4px;
+  border: 1.6px solid rgba(225, 115, 52, 0.21);
+  padding: 15px 20px 17.8px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #e17334;
+  font-size: 22.4px;
+}
+
+.main__actions--textIcons {
+  font-family: $fontOpen;
+  font-size: 12.8px;
+  text-align: center;
+  color: $metal;
+}
+
+.main__content--button {
   color: white;
   background-color: $dirtyBlue;
   width: 129px;
   height: 42px;
-  margin-top: 50px;
-  padding: 10px;
+  margin: 38.6px 0 30px;
+  padding: 12px 20px;
+  border-radius: 21px;
+  font-family: $fontOpen;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
 }
