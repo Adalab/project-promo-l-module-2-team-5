@@ -1,22 +1,83 @@
 .collapsable {
-    background-image: linear-gradient(#f5f5f5, $colorWhite);
-    &__title {
-        font-family: $fontOpen;
-        font-weight: 600;
-        font-size: 18px;
-        text-transform: uppercase;
-        color: $metal;
+/*     background-image: linear-gradient(#f5f5f5, $colorWhite); */
+    &__header {
+        height: 61px;
+        &--title {
+            font-family: $fontOpen;
+            font-weight: 600;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: $metal;
+            margin: 27px 0 0 0;
+        }
     }
-    &__colors {
-        font-family: $fontOpen;
-        font-size: 14px;
-        text-transform: uppercase;
-        color: $metal;
-    }
+}
+.collapsable__header--title {
+    margin-left: 51px;
+}
+.design__square-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px 20px 20px 0px;
+
 }
 .design__square-color {
-    display: inline-block;
     width: 30px;
     height: 25px;
-    background-color: $darkGlueGreen;
+    display: inline-block;
+    margin: -2px;
 }
+.design__square-radio {
+    align-items: center;
+}
+.palette-1 {
+    padding-left: 10px;
+    .color-1 {
+      background-color: $darkGlueGreen;
+    }
+    .color-2 {
+      background-color: #438792;
+    }
+    .color-3 {
+      background-color: #a2deaf;
+    }
+}
+  
+.palette-2 {
+    padding-left: 10px;
+    .color-1 {
+      background-color: #420101;
+    }
+    .color-2 {
+      background-color: #bd1010;
+    }
+    .color-3 {
+      background-color: #e95626;
+    }
+}
+  
+.palette-3 {
+    padding-left: 10px;
+    .color-1 {
+      background-color: #3e5b65;
+    }
+    .color-2 {
+      background-color: #eab052;
+    }
+    .color-3 {
+      background-color: #a0c0cf;
+    }
+}
+.collapsable__box {
+    display: flex;
+    justify-content: space-between;
+}
+.collapsable__colors--title {
+    font-family: $fontOpen;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $metal;
+    margin-left: 31px;
+    }
