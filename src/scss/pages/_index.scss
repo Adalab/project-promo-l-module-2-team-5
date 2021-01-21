@@ -1,5 +1,4 @@
 .landingPage {
-  height: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,4 +111,16 @@
   width: 103px;
   height: 40px;
   margin: 12px 47px 0 48px;
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 40px 10px 41px;
+    align-items: center;
+  }
 }
