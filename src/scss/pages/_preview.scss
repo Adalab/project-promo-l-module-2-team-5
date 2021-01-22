@@ -34,14 +34,13 @@
   }
 
   .preview__container {
-    margin: 20px 0 0;
+    margin: 20px 0 50px;
     padding: 21px 0 12px;
     border-radius: 2px;
     background-color: $white3;
     display: flex;
     flex-direction: column;
-    //justify-content: center;
-    //align-items: center;
+    box-shadow: 0 1px 10px 0 black;
 
     &--h2 {
       margin: 0 14px 4px 15px;
@@ -71,21 +70,19 @@
       height: 200px;
       margin-top: -45px;
     }
-    .logos {
-      display: block;
-      background-color: blue;
+    .card__icons--list {
+      margin: 10px;
     }
-    .logos__img {
+    .card__icons--item {
       width: 32px;
       height: 32px;
-      margin: 0 10px 0 0;
+      margin: 15px 10px 0 10px;
       padding: 7px 10px;
       border-radius: 16px;
       border: solid 2px $mint;
-      background-color: red;
       list-style-type: none;
-      display: flex;
-      justify-content: center;
+      display: inline-block;
+      color: $darkGlueGreen;
     }
   }
 }
