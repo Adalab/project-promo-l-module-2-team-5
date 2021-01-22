@@ -1,27 +1,24 @@
-.card__btn {
-  background-color: $orange;
-  width: 199px;
-  height: 50px;
-  border-radius: 12px;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-  padding: 13px 18px 13px 17px;
-  font-family: $fontOpen;
-  font-size: 18px;
-  color: $colorWhite;
-  text-transform: uppercase;
+.share-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 60px 61px 61px;
 }
 .collapsable__share {
-  background-color: $orange;
-  width: 199px;
-  height: 50px;
-  border-radius: 12px;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-  padding: 15px 18px 13px 18px;
+    background-color: $orange;
+    width: 199px;
+    height: 50px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    padding: 15px 18px 13px 18px;
+    font-family: $fontOpen;
+    font-size: 15px;
+    color: $colorWhite;
+    text-transform: uppercase;
 }
 .collapsable__share--icon {
   width: 25px;
   height: 22px;
   margin: 1px 9px 1px 0;
   font-size: 22px;
-  color: white;
+  color: $colorWhite;
 }
