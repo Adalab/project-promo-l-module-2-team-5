@@ -15,22 +15,16 @@
     margin: 45px 11px 0;
     text-transform: uppercase;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
     align-items: center;
     position: relative;
     left: -80px;
-
-    &--bin {
-      width: 11px;
-      height: 20px;
-    }
   }
   .preview__reset--reset {
     font-family: $fontOpen;
     font-size: 12px;
     color: $metal;
-    padding-top: 16px;
   }
 
   .preview__container {
@@ -83,6 +77,13 @@
       list-style-type: none;
       display: inline-block;
       color: $darkblueGreen;
+
+      .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }
