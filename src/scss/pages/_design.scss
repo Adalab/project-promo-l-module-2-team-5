@@ -1,0 +1,22 @@
+.collapsable {
+  background-image: linear-gradient(#f5f5f5, $colorWhite);
+  &__title {
+    font-family: $fontOpen;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $metal;
+  }
+  &__colors {
+    font-family: $fontOpen;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $metal;
+  }
+}
+.design__square-color {
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  background-color: $darkblueGreen;
+}
