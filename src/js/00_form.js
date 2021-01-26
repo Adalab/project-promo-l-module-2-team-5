@@ -45,3 +45,47 @@ function handleEmail(event) {
 }
 emailElement.addEventListener('keyup', handleEmail);
 
+//Phone
+const phoneElement = document.querySelector('.js-phone');
+const phoneElementPreview = document.querySelector('.js-phone-preview');
+
+function handlePhone(event) {
+  const phoneValue = event.target.value;
+
+  if (phoneValue === '') {
+    phoneElementPreview.href = '';
+  } else {
+    phoneElementPreview.href = phoneValue;
+  }
+}
+phoneElement.addEventListener('keyup', handlePhone);
+
+//Linkedin
+const linkedinElement = document.querySelector('.js-linkedin');
+const linkedinElementPreview = document.querySelector('.js-linkedin-preview');
+
+function handleLinkedin(event) {
+  const linkedinValue = event.target.value;
+
+  if (linkedinValue === '') {
+    linkedinElementPreview.href = '';
+  } else {
+    linkedinElementPreview.href = linkedinValue;
+  }
+}
+linkedinElement.addEventListener('keyup', handleLinkedin);
+
+//Github
+const githubElement = document.querySelector('.js-github');
+const githubElementPreview = document.querySelector('.js-github-preview');
+
+function handleGithub(event) {
+  const githubValue = event.target.value;
+
+  if (githubValue === '') {
+    githubElementPreview.href = '';
+  } else {
+    githubElementPreview.href = githubValue;
+  }
+}
+githubElement.addEventListener('keyup', handleGithub);
