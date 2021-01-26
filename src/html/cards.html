@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome profile cards</title>
+    <script
+      src="https://kit.fontawesome.com/d31a9c1094.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1" />
-  <title>Awesome profile cards</title>
-  <script src="https://kit.fontawesome.com/d31a9c1094.js"
-          crossorigin="anonymous"></script>
-  <link rel="preconnect"
-        href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/png" />
+  </head>
 
-  <link rel="stylesheet"
-        href="./assets/css/main.css" />
-  <link rel="icon"
-        href="./assets/images/favicon.ico"
-        type="image/png" />
-</head>
-
-<body class="page">
-  <include src="./partials/common/header.html"></include>
-  <div class="container__generator">
-    <div class="preview">
+  <body class="page">
+    <include src="./partials/common/header.html"></include>
+    <div class="container__generator">
       <include src="./partials/generator/preview.html"></include>
+      <form class="form">
+        <include src="./partials/generator/design.html"></include>
+        <include src="./partials/generator/fillin.html"></include>
+        <include src="./partials/generator/share.html"></include>
+      </form>
     </div>
-    <form class="form">
-      <include src="./partials/generator/design.html"></include>
-      <include src="./partials/generator/fillin.html"></include>
-      <include src="./partials/generator/share.html"></include>
-    </form>
-  </div>
-  <include src="./partials/common/footer.html"></include>
+    <include src="./partials/common/footer.html"></include>
 
-  <script src="./assets/js/main.js"></script>
-</body>
-
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
