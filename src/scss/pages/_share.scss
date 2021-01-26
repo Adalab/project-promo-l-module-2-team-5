@@ -1,8 +1,8 @@
 .share-container {
   display: flex;
   justify-content: center;
-  margin: 30px 60px 61px 61px;
-}
+/*   margin: 30px 60px 61px 61px;
+ */}
 .collapsable__share {
   background-color: $orange;
   width: 199px;
@@ -21,4 +21,8 @@
   margin: 2px 9px 1px 0;
   font-size: 22px;
   color: $colorWhite;
+}
+.share-preview-container{
+  border-bottom: 1px solid $colorFooter;
+  margin: 30px 0 30px 0;
 }
