@@ -26,3 +26,39 @@
   border-bottom: 1px solid $colorFooter;
   margin: 30px 0 30px 0;
 }
+.share-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $colorFooter;
+  margin-bottom: 30px;
+}
+.share-card__title {
+  font-family: $fontOpen;
+  font-size: 18px;
+  font-weight: 600;
+  color: $metal;
+  margin: 20px 0 5px;
+}
+.share-card__link {
+  font-family: $fontOpen;
+  font-size: 12px;
+  font-weight: 600;
+  color: $orange;
+  margin-bottom: 10px;
+}
+.share-card__button {
+  background-color: #00a0f5;
+  width: 181px;
+  height: 30px;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  padding: 7px 9px 6px 10.5px;
+  font-family: $fontOpen;
+  font-size: 14px;
+  color: $colorWhite;
+  margin: 0 0 1px 9.5px;
+  text-align: center;
+  margin-bottom: 30px;
+}
