@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome profile cards</title>
+    <script
+      src="https://kit.fontawesome.com/d31a9c1094.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/png" />
+  </head>
+
+  <body class="page">
+    <header>
+      <div class="page__header">
+        <a href="./index.html"
+           title="Home">
+          <img class="page__header--logo"
+               src="./assets/images/logo-awesome-profile-cards.svg"
+               alt="logo page" />
+        </a>
+      </div>
+    </header>
+    <div class="container__generator">
+      <div class="preview">
+        <div class="preview__reset">
+          <a href="#" class="preview__reset--reset">Reset</a>
+          <i class="far fa-trash-alt"></i>
+        </div>
+        <section>
+          <article class="preview__container">
+            <h2 class="preview__container--h2 js-name-preview">Nombre Apellidos</h2>
+            <p class="preview__container--h3 js-job-preview">Front-end developer</p>
+            <div class="preview__container--line"></div>
+            <img
+              class="preview__container--photo"
+              src="./assets/images/mujer.png"
+              alt=""
+            />
+            <ul class="card__icons">
+              <li class="card__icons--item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="fas fa-mobile-alt icons js-phone-preview"
+                >
+                </a>
+              </li>
+              <li class="card__icons--item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="far fa-envelope icons js-email-preview"
+                >
+                </a>
+              </li>
+              <li class="card__icons--item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="fab fa-linkedin-in icons js-linkedin-preview"
+                >
+                </a>
+              </li>
+              <li class="card__icons--item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="fab fa-github-alt icons js-github-preview"
+                >
+                </a>
+              </li>
+            </ul>
+          </article>
+        </section>
+      </div>
+
+      <form class="form">
+        <section class="collapsable">
+          <div class="header-container">
+            <div class="collapsable__header">
+              <i class="collapsable__header--icon far fa-object-ungroup"></i>
+              <h2 class="collapsable__header--title">Diseña</h2>
+            </div>
+            <div class="collapsable__header2">
+              <i class="collapsable__header--arrow fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="collapsable__box">
+            <div class="collapsable__colors">
+              <h3 class="collapsable__colors--title">Colores</h3>
+            </div>
+            <div class="collapsable__content design">
+              <label class="display-block design__square-label">
+                <input type="radio" name="palette" class="design__square-radio" />
+                <ul class="palette-1">
+                  <li class="design__square-color color-1"></li>
+                  <li class="design__square-color color-2"></li>
+                  <li class="design__square-color color-3"></li>
+                </ul>
+              </label>
+
+              <label class="display-block design__square-label">
+                <input type="radio" name="palette" class="design__square-radio" />
+                <ul class="palette-2">
+                  <li class="design__square-color color-1"></li>
+                  <li class="design__square-color color-2"></li>
+                  <li class="design__square-color color-3"></li>
+                </ul>
+              </label>
+
+              <label class="display-block design__square-label">
+                <input type="radio" name="palette" class="design__square-radio" />
+                <ul class="palette-3">
+                  <li class="design__square-color color-1"></li>
+                  <li class="design__square-color color-2"></li>
+                  <li class="design__square-color color-3"></li>
+                </ul>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="collapsable">
+          <div class="header-container">
+            <div class="collapsable__header">
+              <i class="collapsable__header--icon far fa-keyboard"></i>
+              <h2 class="collapsable__header--title">Rellena</h2>
+            </div>
+            <div class="collapsable__header2">
+              <i class="collapsable__header--arrow fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="fillin-content">
+            <label for="name" class="fillin__label">Nombre completo</label>
+            <input
+              type="text"
+              id="name"
+              class="fillin__input js-name"
+              placeholder="Ej: Sally Jill"
+            />
+
+            <label for="job" class="fillin__label">Puesto</label>
+            <input
+              type="text"
+              id="job"
+              class="fillin__input js-job"
+              placeholder="Ej: Front-end unicorn"
+            />
+
+            <label for="photo" class="fillin__label">Imagen de perfil</label>
+            <div class="fillin__photo">
+              <button class="fillin__photo--button">Añadir imagen</button>
+              <div class="fillin__photo--preview"></div>
+            </div>
+
+            <label for="email" class="fillin__label">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="fillin__input js-email"
+              placeholder="Ej: sally-hill@gmail.com"
+            />
+
+            <label for="phone" class="fillin__label">Teléfono</label>
+            <input
+              type="text"
+              id="phone"
+              class="fillin__input js-phone"
+              placeholder="Ej: 555-55-55-55"
+            />
+
+            <label for="linkedin" class="fillin__label">Linkedin</label>
+            <input
+              type="text"
+              id="linkedin"
+              class="fillin__input js-linkedin"
+              placeholder="Ej: linkedin.com/in/sally.hill"
+            />
+
+            <label for="github" class="fillin__label">GitHub</label>
+            <input
+              type="text"
+              id="github"
+              class="fillin__input js-github"
+              placeholder="Ej: @sally-hill"
+            />
+          </div>
+        </section>
+
+        <section class="collapsable">
+          <div class="header-container">
+            <div class="collapsable__header">
+              <i class="collapsable__header--icon fas fa-share-alt"></i>
+              <h2 class="collapsable__header--title">Comparte</h2>
+            </div>
+            <div class="collapsable__header2">
+              <i class="collapsable__header--arrow fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="share-container">
+            <div class="collapsable__share">
+              <i class="collapsable__share--icon far fa-address-card"></i>
+              <a href="#">Crear tarjeta</a>
+            </div>
+          </div>
+          <div class="share-preview-container"></div>
+          <div class="share-card">
+            <h2 class="share-card__title">La tarjeta ha sido creada:</h2>
+            <a class="share-card__link"
+               href="">https://awesome-profile-card.com?id=A456DF0001</a>
+            <a class="share-card__button"> <i class="fab fa-twitter"></i> Compartir en twitter</a>
+          </div>
+        </section>
+      </form>
+    </div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__copy">
+          <p>Awesome profile-cards &copy; 2021</p>
+        </div>
+        <div>
+          <a href="https://adalab.es/" target="_blank">
+            <img class="footer__logo" src="./assets/images/logo-adalab.png" alt="logo adalab" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
