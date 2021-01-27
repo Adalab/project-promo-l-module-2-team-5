@@ -1,8 +1,8 @@
 .share-container {
   display: flex;
   justify-content: center;
-/*   margin: 30px 60px 61px 61px;
- */}
+}
+
 .collapsable__share {
   background-color: $orange;
   width: 199px;
@@ -22,7 +22,7 @@
   font-size: 22px;
   color: $colorWhite;
 }
-.share-preview-container{
+.share-preview-container {
   border-bottom: 1px solid $colorFooter;
   margin: 30px 0 30px 0;
 }
@@ -44,7 +44,6 @@
 .share-card__link {
   font-family: $fontOpen;
   font-size: 12px;
-  font-weight: 600;
   color: $orange;
   margin-bottom: 10px;
 }
