@@ -1,0 +1,8 @@
+.collapsable__content--close {
+  .collapsable__icon--right {
+    transform: rotate(180deg);
+  }
+  .collapsable__content {
+    display: none;
+  }
+}
