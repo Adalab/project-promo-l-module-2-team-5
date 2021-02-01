@@ -1,8 +1,8 @@
-.collapsable__content--close {
-  .collapsable__icon--right {
+.js-collapsable {
+  .js-collapsable-arrow {
     transform: rotate(180deg);
   }
-  .collapsable__content {
-    display: none;
-  }
+}
+.js-collapsable-close {
+  display: none;
 }

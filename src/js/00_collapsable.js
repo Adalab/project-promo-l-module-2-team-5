@@ -1,10 +1,20 @@
 'use strict';
 
-const collapDesignHeader = document.querySelector('.collapsable__content--close');
-const collapDesignIcon = document.querySelector('.collapsable__content');
+const collapHeader = document.querySelectorAll('.js-collapsable');
+const collapBox = document.querySelectorAll('.collapsable__box');
 
-function handleCollapDesign () {
-  collapDesignIcon.classList.toggle('collapsable--close');
+
+function handleCollap (event) {
+
+  for(let index = 0; index < collapBox.length; index++) {
+    collapBox[index].classList.toggle('js-collapsable-close');
+    console.log(event.target);
+  }
 }
 
-collapDesignHeader.addEventListener('click' , handleCollapDesign );
+for(let index = 0; index < collapHeader.length; index++) {
+  collapHeader[index].addEventListener('click', handleCollap);
+}
+
+
+/* handleCollap(); */
