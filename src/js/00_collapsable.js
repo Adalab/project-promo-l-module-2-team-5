@@ -6,7 +6,7 @@ const collapBox = document.querySelectorAll('.collapsable__box');
 
 function handleCollap (event) {
 
-  for(let index = 0; index < collapBox.length; index++) {
+  for(let index = 0; index < collapHeader.length; index++) {
     collapBox[index].classList.toggle('js-collapsable-close');
     console.log(event.target);
   }
@@ -17,4 +17,7 @@ for(let index = 0; index < collapHeader.length; index++) {
 }
 
 
-/* handleCollap(); */
+handleCollap(); 
+
+
+
