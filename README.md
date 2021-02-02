@@ -5,6 +5,7 @@ Este es el proyecto del módulo 02 de Adalab. El proyecto consiste en el desarro
 
 Demo
 Para ver el resultado del desarrollo de la página web puedes visitar el siguiente enlace:
+http://beta.adalab.es/project-promo-l-module-2-team-5/
 
 𝗧𝗲𝗰𝗻𝗼𝗹𝗼𝗴í𝗮𝘀 𝗲𝗺𝗽𝗹𝗲𝗮𝗱𝗮𝘀:  
 
