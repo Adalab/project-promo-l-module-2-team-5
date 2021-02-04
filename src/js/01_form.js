@@ -1,4 +1,96 @@
 'use strict';
+
+const inputsTextConfig = [
+  {
+    inputClass: '.js-input-name',
+    cardClass: '.js-card-name',
+    defaultValue: 'Nombre apellidos',
+    cardPrefix: '',
+    cardElementAttribute: 'innerHTML'
+  },
+  {
+    inputClass: '.js-input-job',
+    cardClass: '.js-card-job',
+    defaultValue: 'Programadora front end',
+    cardPrefix: '',
+    cardElementAttribute: 'innerHTML'
+  },
+  {
+    inputClass: '.js-input-email',
+    cardClass: '.js-card-email',
+    defaultValue: '',
+    cardPrefix: 'mailto:',
+    cardElementAttribute: 'href'
+  },
+  {
+    inputClass: '.js-input-phone',
+    cardClass: '.js-card-phone',
+    defaultValue: '',
+    cardPrefix: '',
+    cardElementAttribute: 'href'
+  },
+  {
+    inputClass: '.js-input-linkedin',
+    cardClass: '.js-card-linkedin',
+    defaultValue: '',
+    cardPrefix: 'https://www.linkedin.com/in/',
+    cardElementAttribute: 'href'
+  },
+  {
+    inputClass: '.js-input-github',
+    cardClass: '.js-card-github',
+    defaultValue: '',
+    cardPrefix: 'https://www.github.com/',
+    cardElementAttribute: 'href'
+  }
+];
+
+function updateAllinputs() {
+  for (const inputTextConfig of inputsTextConfig) {
+    console.log('Empiezo la iteración', inputTextConfig);
+
+    const inputElement = document.querySelector(inputTextConfig.inputClass);
+    console.log('Elemento del formulario:', inputTextConfig.inputClass, inputElement)
+  
+    const cardElement = document.querySelector(inputTextConfig.cardClass);
+    console.log('Elemento del la tarjeta:', inputTextConfig.cardClass, cardElement);
+
+    let newValue = inputElement.value;
+
+    if (inputTextConfig.cardElementAttribute === 'innerHTML') {
+      if (inputElement.value === '') {
+        newValue = inputTextConfig.defaultValue;
+      } else {
+        newValue = inputElement.value;
+      }
+      console.log('Valor por defecto:', inputTextConfig.defaultValue);
+      console.log('Nuevo valor a poner en la tarjeta:', newValue);
+      cardElement.innerHTML = newValue;
+    }
+    else if (inputTextConfig.cardElementAttribute === 'href') {
+      if (inputElement.value === '') {
+        newValue = '#';
+      } else {
+        newValue = newValue.replace(inputTextConfig.cardPrefix, '');
+        newValue = inputTextConfig.cardPrefix + newValue;
+      }
+      console.log('Valor del prefijo:', inputTextConfig.cardPrefix);
+      console.log('Nuevo valor a poner en la tarjeta:', newValue);
+      cardElement.href = newValue;
+    }
+    console.log('-------------------------------------------------');
+    }
+    //saveInLocalStorage();
+  }
+  const inputTextElements = document.querySelectorAll('.js-input-text');
+  for (const inputTextElement of inputTextElements) {
+    inputTextElement.addEventListener('keyup', updateAllinputs);
+  }
+  
+//Tenemos que añadir updateAllInputs() al final del main para que se ejecute 
+
+
+/*
 //Name
 
 const nameElement = document.querySelector('.js-name');
@@ -89,3 +181,4 @@ function handleGithub(event) {
   }
 }
 githubElement.addEventListener('keyup', handleGithub);
+*/
