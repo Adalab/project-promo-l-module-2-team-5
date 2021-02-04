@@ -1,11 +1,7 @@
 .collapsable {
   padding-top: 27px;
+  border-bottom: 1px solid $colorFooter;
 }
-/* .collapsable__header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-} */
 .header-container {
   display: flex;
   flex-direction: row;
@@ -20,8 +16,6 @@
   color: $orange;
   width: 16px;
   height: 18px;
-  /*   margin-left: 20px;
- */
   margin-right: 10px;
 }
 .collapsable__header--title {
@@ -41,7 +35,7 @@
 .collapsable__box {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid $colorFooter;
+  /* border-bottom: 1px solid $colorFooter; */
 }
 .collapsable__content {
   margin-top: 6px;
