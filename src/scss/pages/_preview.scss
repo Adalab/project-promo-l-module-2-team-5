@@ -71,27 +71,28 @@
     }
     .card__icons {
       margin: 0px 0 0 13px;
-
-      &--item {
+      .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      &--item1 {
         width: 32px;
         height: 32px;
         margin: 15px 0px 0 7px;
         padding: 7px 10px;
         border-radius: 16px;
         border: solid 2px $mint;
-        list-style-type: none;
         display: inline-block;
-        color: $darkblueGreen;
-
-        .icons {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-        }
       }
     }
   }
+}
+.card__icons--item2 {
+  list-style-type: none;
+  display: inline-block;
+  color: $darkblueGreen;
 }
 //clases JS
 .palette-1 {
@@ -101,6 +102,12 @@
   .preview__container--line {
     background-color: #438792;
   }
+  .card__icons--item1 {
+    border: solid 2px $mint;
+  }
+  .card__icons--item2 {
+    color: $darkblueGreen;
+  }
 }
 .palette-2 {
   .preview__container--h2 {
@@ -109,7 +116,10 @@
   .preview__container--line {
     background-color: #bd1010;
   }
-  .card__icons--item {
+  .card__icons--item1 {
+    border: solid 2px #e95626;
+  }
+  .card__icons--item2 {
     color: #420101;
   }
 }
@@ -119,5 +129,11 @@
   }
   .preview__container--line {
     background-color: #eab052;
+  }
+  .card__icons--item1 {
+    border: solid 2px #a0c0cf;
+  }
+  .card__icons--item2 {
+    color: #3e5b65;
   }
 }
