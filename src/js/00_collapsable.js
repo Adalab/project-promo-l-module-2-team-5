@@ -2,6 +2,7 @@
 // Los querySelectorAll provocan un array en cada uno de los elementos con la misma clase
 const collapHeader = document.querySelectorAll('.js-collapsable');
 const collapBox = document.querySelectorAll('.collapsable__box');
+const collapArrow = document.querySelectorAll('.js-collapsable-arrow');
 
 // Como se produce un array, necesitamos un bucle para poder buscar en cada array
 for (let index = 0; index < collapHeader.length; index++) {
@@ -26,6 +27,13 @@ function handleCollap(event) {
       //Este ELSE sirve para que cuando abres una pestaña las otras se cierren
     } else {
       collapBox[index].classList.add('js-collapsable-close');
+    }
+  }
+  for (let index = 0; index < collapArrow.length; index++) {
+    if (clickedCollap === collapSection[index]) {
+      collapArrow[index].classList.toggle('js-collapsable-arrow');
+    } else {
+      collapBox[index].classList.add('js-collapsable-arrow');
     }
   }
 }
