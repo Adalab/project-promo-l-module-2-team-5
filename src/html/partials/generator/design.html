@@ -1,5 +1,7 @@
 <section class="collapsable">
-  <include src="./collapsable-header.html" title="Diseña" icon="far fa-object-ungroup"></include>
+  <include src="./collapsable-header.html"
+           title="Diseña"
+           icon="far fa-object-ungroup"></include>
   <div class="collapsable__box js-collapsable-close">
     <div class="collapsable__colors">
       <h3 class="collapsable__colors--title">Colores</h3>
@@ -8,7 +10,9 @@
       <label class="display-block design__square-label">
         <input type="radio"
                name="palette"
-               class="design__square-radio" />
+               class="design__square-radio js-palette"
+               value="1"
+               checked />
         <ul class="palette-1">
           <li class="design__square-color color-1"></li>
           <li class="design__square-color color-2"></li>
@@ -19,7 +23,8 @@
       <label class="display-block design__square-label">
         <input type="radio"
                name="palette"
-               class="design__square-radio" />
+               class="design__square-radio js-palette"
+               value="2" />
         <ul class="palette-2">
           <li class="design__square-color color-1"></li>
           <li class="design__square-color color-2"></li>
@@ -30,7 +35,8 @@
       <label class="display-block design__square-label">
         <input type="radio"
                name="palette"
-               class="design__square-radio" />
+               class="design__square-radio js-palette"
+               value="3" />
         <ul class="palette-3">
           <li class="design__square-color color-1"></li>
           <li class="design__square-color color-2"></li>
