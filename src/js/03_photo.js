@@ -31,9 +31,8 @@ function writeImage() {
    * de nuestro componente.
    */
 
-  console.log(fr.result);
   profilePreview.style.backgroundImage = `url(${fr.result})`;
-  profileImage.style.backgroundImage = `url(${fr.result})`;
+  profileImage.setAttribute ('src' , fr.result);
 }
 
 /**

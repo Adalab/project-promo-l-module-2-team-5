@@ -47,6 +47,9 @@
   width: 30px;
   height: 30px;
   border: 1px solid $mint;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hidden-field {
