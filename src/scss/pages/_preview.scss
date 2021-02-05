@@ -95,7 +95,7 @@
   color: $darkblueGreen;
 }
 //clases JS
-.palette-1 {
+.preview .preview__container.palette-1 {
   .preview__container--h2 {
     color: $darkblueGreen;
   }
@@ -103,13 +103,13 @@
     background-color: #438792;
   }
   .card__icons--item1 {
-    border: solid 2px $mint;
+    border-color: $mint;
   }
   .card__icons--item2 {
     color: $darkblueGreen;
   }
 }
-.palette-2 {
+.preview .preview__container.palette-2 {
   .preview__container--h2 {
     color: #420101;
   }
@@ -117,13 +117,14 @@
     background-color: #bd1010;
   }
   .card__icons--item1 {
-    border: solid 2px #e95626;
+    border-color: #e95626;
   }
   .card__icons--item2 {
     color: #420101;
   }
 }
-.palette-3 {
+
+.preview .preview__container.palette-3 {
   .preview__container--h2 {
     color: #3e5b65;
   }
