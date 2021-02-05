@@ -1,10 +1,11 @@
-'use strict';
+"use strict";
 
 const fr = new FileReader();
-const uploadBtn = document.querySelector('.js__profile-trigger');
-const fileField = document.querySelector('.js__profile-upload-btn');
-const profileImage = document.querySelector('.js__profile-image');
-const profilePreview = document.querySelector('.js__profile-preview');
+const uploadBtn = document.querySelector(".js__profile-trigger");
+const fileField = document.querySelector(".js__profile-upload-btn");
+const profileImage = document.querySelector(".js__profile-image");
+const profilePreview = document.querySelector(".js__profile-preview");
+let photo = "";
 
 /**
  * Recoge el archivo añadido al campo de tipo "file"
@@ -16,7 +17,7 @@ const profilePreview = document.querySelector('.js__profile-preview');
  */
 function getImage(e) {
   const myFile = e.currentTarget.files[0];
-  fr.addEventListener('load', writeImage);
+  fr.addEventListener("load", writeImage);
   fr.readAsDataURL(myFile);
 }
 
@@ -31,10 +32,18 @@ function writeImage() {
    * de nuestro componente.
    */
 
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
-  profileImage.setAttribute ('src' , fr.result);
+  photo = fr.result;
+  updatePhoto();
+  // después de cualquier acción del usuario guardo en el local storage
+  saveInLocalStorage();
 }
-
+function updatePhoto() {
+  const currentPhoto = photo || "./assets/images/mujer.png";
+  profilePreview.style.backgroundImage = `url(${currentPhoto})`;
+  profileImage.setAttribute("src", currentPhoto);
+  /*   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  profileImage.setAttribute("src", fr.result); */
+}
 /**
  * Genera un click automático en nuesto campo de tipo "file"
  * que está oculto
@@ -48,5 +57,5 @@ function fakeFileClick() {
  * - al botón visible para generar el click automático
  * - al campo oculto para cuando cambie su value
  */
-uploadBtn.addEventListener('click', fakeFileClick);
-fileField.addEventListener('change', getImage);
+uploadBtn.addEventListener("click", fakeFileClick);
+fileField.addEventListener("change", getImage);
