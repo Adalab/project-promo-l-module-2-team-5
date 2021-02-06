@@ -53,7 +53,7 @@ const inputsTextConfig = [
   },
 ];
 
-function updateAllinputs() {
+function updateAllInputs() {
   for (const inputTextConfig of inputsTextConfig) {
     const inputElement = document.querySelector(inputTextConfig.inputClass);
     const cardElement = document.querySelector(inputTextConfig.cardClass);
@@ -77,10 +77,10 @@ function updateAllinputs() {
       cardElement.href = newValue;
     }
   }
-  //saveInLocalStorage();
+  saveInLocalStorage();
 }
 const inputTextElements = document.querySelectorAll(".js-input-text");
 for (const inputTextElement of inputTextElements) {
-  inputTextElement.addEventListener("keyup", updateAllinputs);
+  inputTextElement.addEventListener("keyup", updateAllInputs);
 }
 //Tenemos que añadir updateAllInputs() al final del main para que se ejecute
