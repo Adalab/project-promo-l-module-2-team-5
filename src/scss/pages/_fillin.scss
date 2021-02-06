@@ -9,7 +9,6 @@
   font-size: 14px;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid $colorFooter;
 }
 
 .fillin__label {
@@ -48,4 +47,11 @@
   width: 30px;
   height: 30px;
   border: 1px solid $mint;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hidden-field {
+  display: none;
 }

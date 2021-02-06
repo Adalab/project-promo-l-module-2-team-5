@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
 }
-
 .collapsable__share {
   background-color: $orange;
   width: 199px;
@@ -24,6 +23,7 @@
 }
 .share-preview-container {
   border-bottom: 1px solid $colorFooter;
+
   margin: 30px 0 30px 0;
 }
 .share-card {
@@ -31,7 +31,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid $colorFooter;
   margin-bottom: 30px;
 }
 .share-card__title {
