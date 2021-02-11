@@ -83,5 +83,5 @@ const inputTextElements = document.querySelectorAll(".js-input-text");
 for (const inputTextElement of inputTextElements) {
   inputTextElement.addEventListener("keyup", updateAllInputs);
 }
-handleReset();
+/* handleReset(); */
 //Tenemos que añadir updateAllInputs() al final del main para que se ejecute
