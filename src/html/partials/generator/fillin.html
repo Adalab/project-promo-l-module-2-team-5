@@ -1,32 +1,60 @@
-<section class="">
-  <h2 class="collapsable__header">
-    <span class="collapsable__icon"></span>
-    <span class="collapsable__title">Rellena</span>
-    <span class="collapsable__arrow"></span>
-  </h2>
-  <form class="collapsable__content fillin" action="/signup" method="post">
-    <label for="name" class="form__label">Nombre completo</label>
-    <input type="text" id="name" class="form__input" />
+<section class="collapsable">
+       <include src="./collapsable-header.html"
+                title="Rellena"
+                icon="fa fa-keyboard-o"></include>
+       <div class="fillin-content collapsable__box js-collapsable-close">
+              <label for="name"
+                     class="fillin__label">Nombre completo</label>
+              <input type="text"
+                     id="name"
+                     class="fillin__input js-input-name js-input-text"
+                     placeholder="Ej: Sally Jill" />
 
-    <label for="job" class="form__label">Puesto</label>
-    <input type="text" id="job" class="form__input" />
+              <label for="job"
+                     class="fillin__label">Puesto</label>
+              <input type="text"
+                     id="job"
+                     class="fillin__input js-input-job js-input-text"
+                     placeholder="Ej: Front-end unicorn" />
 
-    <label for="photo" class="form__label">Imagen de perfil</label>
-    <div class="fillin-photo">
-      <button class="">Añadir imagen</button>
-      <div class="fillin-photo__preview"></div>
-    </div>
+              <label for="photo"
+                     class="fillin__label">Imagen de perfil</label>
+              <div class="fillin__photo">
+                     <button class="fillin__photo--button js__profile-trigger">Añadir imagen</button>
+                     <input type="file"
+                            name="photo"
+                            id="img-selector"
+                            class="hidden-field input-required js__profile-upload-btn"
+                            required>
+                     <div class="fillin__photo--preview js__profile-preview"></div>
+              </div>
 
-    <label for="email" class="form__label">Email</label>
-    <input type="email" id="email" class="form__input" />
+              <label for="email"
+                     class="fillin__label">Email</label>
+              <input type="email"
+                     id="email"
+                     class="fillin__input js-input-email js-input-text"
+                     placeholder="Ej: sally-hill@gmail.com" />
 
-    <label for="phone" class="form__label">Teléfono</label>
-    <input type="text" id="phone" class="form_input" />
+              <label for="phone"
+                     class="fillin__label">Teléfono</label>
+              <input type="text"
+                     id="phone"
+                     class="fillin__input js-input-phone js-input-text"
+                     placeholder="Ej: 555-55-55-55" />
 
-    <label for="linkedin" class="form__label">Linkedin</label>
-    <input type="text" id="linkedin" class="form__input" />
+              <label for="linkedin"
+                     class="fillin__label">Linkedin</label>
+              <input type="text"
+                     id="linkedin"
+                     class="fillin__input js-input-linkedin js-input-text"
+                     placeholder="Ej: linkedin.com/in/sally.hill" />
 
-    <label for="github" class="form__label">GitHub</label>
-    <input type="text" id="github" class="form__input" />
-  </form>
+              <label for="github"
+                     class="fillin__label">GitHub</label>
+              <input type="text"
+                     id="github"
+                     class="fillin__input js-input-github js-input-text"
+                     placeholder="Ej: @sally-hill" />
+       </div>
 </section>

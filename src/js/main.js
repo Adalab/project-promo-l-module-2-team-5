@@ -1,3 +1,6 @@
-'use strict';
+"use strict";
 
-console.log('>> Ready :)');
+getFromLocalStorage();
+updateAllInputs();
+updatePalette();
+updatePhoto();

@@ -1,0 +1,9 @@
+.js-collapsable {
+  .js-collapsable-arrow {
+    transform: rotate(180deg);
+    // transition: transform ease 0.8s;
+  }
+}
+.js-collapsable-close {
+  display: none;
+}
