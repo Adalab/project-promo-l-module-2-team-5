@@ -26,6 +26,7 @@
 
   margin: 30px 0 30px 0;
 }
+
 .share-card {
   display: flex;
   flex-direction: column;
@@ -59,4 +60,8 @@
   margin: 0 0 1px 9.5px;
   text-align: center;
   margin-bottom: 30px;
+}
+
+.hidden {
+  display: none;
 }
