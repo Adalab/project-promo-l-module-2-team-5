@@ -4,3 +4,4 @@ getFromLocalStorage();
 updateAllInputs();
 updatePalette();
 updatePhoto();
+handleReset();
