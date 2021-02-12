@@ -10,7 +10,7 @@ function handleCreateBtn(ev) {
   console.log("Mis datos", getUserData());
 
   const url =
-    "https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/";
+    "https://profileawesome.herokuapp.com/card";
   const data = getUserData();
 
   fetch(url, {
