@@ -5,3 +5,4 @@ updateAllInputs();
 updatePalette();
 updatePhoto();
 updateTypo();
+handleReset();
