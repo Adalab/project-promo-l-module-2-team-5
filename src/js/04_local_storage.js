@@ -24,6 +24,7 @@ Recuperar del local storage:
 function getUserData() {
   return {
     photo: photo,
+    typo: document.querySelector(".js-typo:checked").value,
     palette: parseInt(document.querySelector(".js-palette:checked").value),
     name: document.querySelector(".js-input-name").value,
     job: document.querySelector(".js-input-job").value,
@@ -70,10 +71,18 @@ function getFromLocalStorage() {
         paletteElement.checked = true;
       }
     }
+    //TYPOS
+    const typoElements = document.querySelectorAll(".js-typo");
+    for (const typoElement of typoElements) {
+      if (typoElement.value === userData.typo) {
+        typoElement.checked = true;
+      }
+    }
     // propago los datos desde el formulario a la tarjeta
     updateAllInputs();
     updatePalette();
     updatePhoto();
+    updateTypo();
   }
 }
 

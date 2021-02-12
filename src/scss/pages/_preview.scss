@@ -139,3 +139,12 @@
     color: #3e5b65;
   }
 }
+// Typos
+.preview .preview__container.typography-2 {
+  .preview__container--h2 {
+    font-family: $fontMerriweather;
+  }
+  .preview__container--h3 {
+    font-family: $fontMerriweather;
+  }
+}
