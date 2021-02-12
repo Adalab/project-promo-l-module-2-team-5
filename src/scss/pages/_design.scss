@@ -108,4 +108,15 @@
   font-size: 14px;
   text-transform: uppercase;
   color: $metal;
+  padding-top: 10px;
+}
+
+.style__typo {
+  font-family: $fontOpen;
+  font-size: 12.5px;
+  text-transform: uppercase;
+  color: $metal;
+}
+.padd_typo {
+  padding-left: 10px;
 }
