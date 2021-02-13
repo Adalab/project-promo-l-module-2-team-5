@@ -5,4 +5,4 @@ updateAllInputs();
 updatePalette();
 updatePhoto();
 handleReset();
-// createTwitterLink();
+handleTwitterShare();
