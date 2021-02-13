@@ -1,12 +1,12 @@
 .preview {
-	background: linear-gradient(to bottom, $silver, $paleGrey);
+	background-color: rgba(43, 150, 150, 0.3);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	@media all and (min-width: 768px) {
 		border-radius: 6px;
-		width: 100%;
+		width: 900px;
 		margin: 23px 40px 21px 30px;
 		min-height: 80vh;
 	}
