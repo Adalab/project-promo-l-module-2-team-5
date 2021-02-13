@@ -1,11 +1,12 @@
 .collapsable {
+  /*     background-image: linear-gradient(#f5f5f5, $colorWhite); */
   padding-top: 27px;
-  border-bottom: 1px solid $colorFooter;
 }
-.collapsable3 {
-  border-bottom: none;
-}
-
+/* .collapsable__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
 .header-container {
   display: flex;
   flex-direction: row;
@@ -20,6 +21,7 @@
   color: $orange;
   width: 16px;
   height: 18px;
+  margin-left: 20px;
   margin-right: 10px;
 }
 .collapsable__header--title {
@@ -35,6 +37,11 @@
   font-size: 18px;
   color: $metal;
   margin-right: 20px;
+}
+.collapsable__box {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $colorFooter;
 }
 .collapsable__content {
   margin-top: 6px;
@@ -58,13 +65,13 @@
 .palette-1 {
   padding-left: 10px;
   .color-1 {
-    background-color: $darkblueGreen;
+    background-color: $darkGlueGreen;
   }
   .color-2 {
     background-color: #438792;
   }
   .color-3 {
-    background-color: $mint;
+    background-color: #a2deaf;
   }
 }
 
@@ -98,21 +105,5 @@
   font-size: 14px;
   text-transform: uppercase;
   color: $metal;
-}
-.collapsable__typo--title {
-  font-family: $fontOpen;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: $metal;
-  padding-top: 10px;
-}
-
-.style__typo {
-  font-family: $fontOpen;
-  font-size: 12.5px;
-  text-transform: uppercase;
-  color: $metal;
-}
-.padd_typo {
-  padding-left: 10px;
+  margin: 0 0 0 39px;
 }

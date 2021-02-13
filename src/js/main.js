@@ -4,5 +4,6 @@ getFromLocalStorage();
 updateAllInputs();
 updatePalette();
 updatePhoto();
+updateTypo();
 handleReset();
 handleTwitterShare();

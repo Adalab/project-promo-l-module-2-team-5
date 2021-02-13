@@ -2,6 +2,7 @@
 
 const paletteElements = document.querySelectorAll(".js-palette");
 const cardElement = document.querySelector(".js-card");
+const typoElements = document.querySelectorAll(".js-typo");
 
 function updatePalette() {
   cardElement.classList.remove("palette-1", "palette-2", "palette-3");
@@ -14,7 +15,19 @@ function updatePalette() {
 for (const paletteElement of paletteElements) {
   paletteElement.addEventListener("change", updatePalette);
 }
+// TYPOS
+function updateTypo() {
+  cardElement.classList.remove("typography-1", "typography-2", "typography-3");
+  const checkedTypo = document.querySelector(".js-typo:checked");
+  const checkedTypoValue = checkedTypo.value;
+  cardElement.classList.add("typography-" + checkedTypoValue);
+  console.log(checkedTypoValue);
+  saveInLocalStorage();
+}
 
+for (const typoElement of typoElements) {
+  typoElement.addEventListener("change", updateTypo);
+}
 // ESTO DE ABAJO ES LO QUE TENÍAMOS ANTERIORMENTE
 /* handlePalette(); */
 

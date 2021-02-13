@@ -8,6 +8,15 @@ function handleSubmit(ev) {
 
 formElement.addEventListener("submit", handleSubmit);
 
+function handleIntro(event) {
+  let keyCode = event.which;
+  if (keyCode == 13) {
+    event.preventDefault();
+    return false;
+  }
+}
+formElement.addEventListener("keydown", handleIntro);
+
 const inputsTextConfig = [
   {
     inputClass: ".js-input-name",
