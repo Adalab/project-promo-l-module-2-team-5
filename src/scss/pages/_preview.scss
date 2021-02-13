@@ -126,7 +126,6 @@
     color: #420101;
   }
 }
-
 .preview .preview__container.palette-3 {
   .preview__container--h2 {
     color: #3e5b65;
@@ -142,6 +141,15 @@
   }
 }
 // TYPO MODIFIERS
+.preview .preview__container.typography-1 {
+  .preview__container--h2 {
+    font-family: $fontMonserrat;
+    font-weight: 700;
+  }
+  .preview__container--h3 {
+    font-family: $fontMonserrat;
+  }
+}
 .preview .preview__container.typography-2 {
   .preview__container--h2 {
     font-family: $fontCabinTypo;
@@ -154,8 +162,10 @@
 .preview .preview__container.typography-3 {
   .preview__container--h2 {
     font-family: $fontZillaTypo;
+    font-weight: 500;
   }
   .preview__container--h3 {
     font-family: $fontZillaTypo;
+    font-weight: 500;
   }
 }
