@@ -40,6 +40,10 @@
 	display: flex;
 	justify-content: space-between;
 }
+/* .collapsable__box {
+  display: flex;
+  justify-content: space-between;
+} */ // Si lo quito funciona Tipografías
 .collapsable__content {
 	margin-top: 6px;
 }
@@ -102,4 +106,21 @@
 	font-size: 14px;
 	text-transform: uppercase;
 	color: $metal;
+}
+.collapsable__typo--title {
+  font-family: $fontOpen;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $metal;
+  padding-top: 10px;
+}
+
+.style__typo {
+  font-family: $fontOpen;
+  font-size: 12.5px;
+  text-transform: uppercase;
+  color: $metal;
+}
+.padd_typo {
+  padding-left: 10px;
 }
