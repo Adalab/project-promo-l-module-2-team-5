@@ -8,7 +8,7 @@ const shareContainer = document.querySelector(".js-share__container");
 function handleCreateBtn(ev) {
   ev.preventDefault();
   shareContainer.classList.remove("hidden");
-  const url = "https://profileawesome.herokuapp.com/card";
+  const url = "https://awesome-profile-cards.herokuapp.com/";
   const data = getUserData();
   
   fetch(url, {
