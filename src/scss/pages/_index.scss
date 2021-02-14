@@ -1,120 +1,120 @@
 .page {
-	height: 100vh;
+  height: 100vh;
 }
 
 .main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: $backgroundLanding;
-	padding: 0 35px 0;
-	height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: $backgroundLanding;
+  padding: 0 35px 0;
+  height: 100vh;
 
-	&__content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-	&__content--logo {
-		margin: 95px 35px 35.4px;
-		width: 250px;
-	}
+  &__content--logo {
+    margin: 95px 35px 35.4px;
+    width: 250px;
+  }
 
-	&__content--subtitle {
-		width: 223px;
-		height: 24px;
-		margin: 0 22.9px 5px 22.1px;
-		font-family: $fontMerriweather;
-		font-size: 19.2px;
-		font-weight: 900;
-		text-align: center;
-		color: $orange;
-	}
+  &__content--subtitle {
+    margin: 0 22.9px 5px 22.1px;
+    font-family: $fontMerriweather;
+    font-size: 19.2px;
+    font-weight: 900;
+    text-align: center;
+    color: $orange;
+  }
 
-	&__content--text {
-		width: 264.8px;
-		height: 38.4px;
-		margin: 0px 1.6px 17.8px 1.6px;
-		font-family: $fontOpen;
-		font-size: 12.8px;
-		color: $darkblueGreen;
-		padding-top: 1px;
-	}
+  &__content--text {
+    width: 264.8px;
+    height: 38.4px;
+    margin: 0px 1.6px 17.8px 1.6px;
+    font-family: $fontOpen;
+    font-size: 12.8px;
+    color: $darkblueGreen;
+    padding-top: 1px;
+  }
 
-	&__actions {
-		width: 268px;
-		height: 73.8px;
-		border-radius: 4px;
-		border: 1.6px solid rgba(225, 115, 52, 0.21);
-		padding: 15px 20px 17.8px 20px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-		color: #e17334;
-		font-size: 22.4px;
-	}
+  &__actions {
+    width: 268px;
+    height: 73.8px;
+    border-radius: 4px;
+    border: 1.6px solid rgba(225, 115, 52, 0.21);
+    padding: 15px 20px 17.8px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #e47162;
+    font-size: 22.4px;
+  }
 
-	&__actions--textIcons {
-		font-family: $fontOpen;
-		font-size: 12.8px;
-		text-align: center;
-		color: $metal;
-	}
+  &__actions--textIcons {
+    font-family: $fontOpen;
+    font-size: 12.8px;
+    text-align: center;
+    color: $metal;
+  }
 
-	&__content--button {
-		color: white;
-		background-color: $dirtyBlue;
-		width: 129px;
-		height: 42px;
-		margin: 38.6px 0 30px;
-		padding: 12px 20px;
-		border-radius: 21px;
-		font-family: $fontOpen;
-		font-size: 16px;
-		text-transform: uppercase;
-		text-align: center;
-	}
+  &__content--button {
+    color: $colorWhite;
+    background-color: $dirtyBlue;
+    width: 129px;
+    height: 42px;
+    margin: 38.6px 0 30px;
+    padding: 12px 20px;
+    border-radius: 21px;
+    font-family: $fontOpen;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    &:hover {
+      color: #e47162;
+      transform: scale(1.05);
+    }
+  }
 }
 
 @media (min-width: 768px) {
-	.main__content--logo {
-		width: 350px;
+  .main__content--logo {
+    width: 350px;
+  }
+  .main__content--subtitle {
+    font-size: 24px;
+    font-weight: 900;
+    font-family: $fontMerriweather;
+  }
 
-		&__content--subtitle {
-			width: 278px;
-			height: 31px;
-			font-size: 24px;
-			font-weight: 900;
-		}
+  .main__content--text {
+    width: 331px;
+    height: 48px;
+    font-size: 16px;
+  }
 
-		&__content--text {
-			width: 331px;
-			height: 48px;
-			font-size: 16px;
-		}
+  .main__actions {
+    width: 325px;
+    height: 86px;
+    border-radius: 5px;
+    border: 2px solid rgba(225, 115, 52, 0.21);
+    margin: 27px 47px 0;
+    padding: 15px 20px 22px;
+    font-size: 28px;
+  }
 
-		&__actions {
-			width: 325px;
-			height: 86px;
-			border-radius: 5px;
-			border: 2px solid rgba(225, 115, 52, 0.21);
-			margin: 27px 47px 0;
-			padding: 15px 20px 22px;
-			font-size: 28px;
-		}
+  .main__actions--textIcons {
+    font-size: 16px;
+    color: $metal;
+  }
 
-		&__actions--textIcons {
-			font-size: 16px;
-			color: $metal;
-		}
-
-		&__content--button {
-			margin-bottom: 60px;
-			padding: 12px 20.5px 10px 19.5px;
-		}
-	}
+  .main__content--button {
+    margin-bottom: 60px;
+    padding: 12px 20.5px 10px 19.5px;
+  }
 }

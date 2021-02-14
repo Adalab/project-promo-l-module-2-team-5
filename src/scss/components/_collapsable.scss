@@ -1,7 +1,9 @@
 .js-collapsable {
   .js-collapsable-arrow {
     transform: rotate(180deg);
-    // transition: transform ease 0.8s;
+  }
+  .js-collapsable-arrow:hover {
+    color: #2b9696;
   }
 }
 .js-collapsable-close {

@@ -4,13 +4,32 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 30px 80px 30px 60px;
-	@media all and (min-width: 768px) {
+	margin: 30px 0 30px 40px;
+	max-width: 1500px;
+	margin: 0 auto;
+	height: 7 rem;
+}
+
+.page__header--logo {
+	padding: 20px 0 20px 0px;
+	width: 201px;
+}
+
+@media all and (min-width: 768px) {
+	.page__header {
 		align-items: flex-start;
+		padding-left: 40px;
+		max-width: 1200px;
 	}
-	&--logo {
-		width: 200px;
+	.page__header--logo {
+		width: 150px;
+		margin-left: 40px;
+	}
+	@media all and (min-width: 1024px) {
+		.page__header {
+			align-items: flex-start;
+			padding-left: 0px;
+			max-width: 1200px;
+		}
 	}
 }
-// no me deja anidar el @media
-// falta meter favicon

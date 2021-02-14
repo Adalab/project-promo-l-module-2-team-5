@@ -1,5 +1,5 @@
 .collapsable {
-  padding-top: 27px;
+  padding: 27px 30px 0 40px;
   border-bottom: 1px solid $colorFooter;
 }
 .collapsable3 {
@@ -15,26 +15,27 @@
 .collapsable__header {
   display: flex;
   flex-direction: row;
-}
-.collapsable__header--icon {
-  color: $orange;
-  width: 16px;
-  height: 18px;
-  margin-right: 10px;
-}
-.collapsable__header--title {
-  font-family: $fontOpen;
-  font-weight: 600;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: $metal;
-}
-.collapsable__header--arrow {
-  width: 16px;
-  height: 18px;
-  font-size: 18px;
-  color: $metal;
-  margin-right: 20px;
+
+  &--icon {
+    color: $orange;
+    width: 16px;
+    height: 18px;
+    margin-right: 10px;
+  }
+  &--title {
+    font-family: $fontOpen;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $metal;
+  }
+  &--arrow {
+    width: 16px;
+    height: 18px;
+    font-size: 18px;
+    color: $metal;
+    margin-right: 20px;
+  }
 }
 .collapsable__content {
   margin-top: 6px;
@@ -109,10 +110,20 @@
 
 .style__typo {
   font-family: $fontOpen;
-  font-size: 12.5px;
+  font-size: 16px;
   text-transform: uppercase;
   color: $metal;
 }
-.padd_typo {
+
+.padd_typo1 {
   padding-left: 10px;
+  font-size: 10px;
+}
+.padd_typo2 {
+  padding-left: 13px;
+  font-size: 10px;
+}
+.padd_typo3 {
+  padding-left: 20px;
+  font-size: 10px;
 }

@@ -57,5 +57,20 @@ function fakeFileClick() {
  * - al botón visible para generar el click automático
  * - al campo oculto para cuando cambie su value
  */
+function writeImage() {
+  photo = fr.result;
+  updatePhoto();
+  saveInLocalStorage();
+}
+function updatePhoto() {
+  const currentPhoto =
+    photo || "https://media.giphy.com/media/jnEQ1YoSLy9gSic7Qv/giphy.gif";
+  profilePreview.style.backgroundImage = `url(${currentPhoto})`;
+  profileImage.setAttribute("src", currentPhoto);
+}
+
+function fakeFileClick() {
+  fileField.click();
+}
 uploadBtn.addEventListener("click", fakeFileClick);
 fileField.addEventListener("change", getImage);
