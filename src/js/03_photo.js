@@ -38,7 +38,7 @@ function writeImage() {
   saveInLocalStorage();
 }
 function updatePhoto() {
-  const currentPhoto = photo || "./assets/images/icono-mujer.png ";
+  const currentPhoto = photo || 'https://media.giphy.com/media/jnEQ1YoSLy9gSic7Qv/giphy.gif'; //"./assets/images/icono-mujer.png ";
   profilePreview.style.backgroundImage = `url(${currentPhoto})`;
   profileImage.setAttribute("src", currentPhoto);
   /*   profilePreview.style.backgroundImage = `url(${fr.result})`;
