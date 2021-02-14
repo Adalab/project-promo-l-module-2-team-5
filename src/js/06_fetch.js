@@ -7,12 +7,10 @@ const shareContainer = document.querySelector(".js-share__container");
 
 function handleCreateBtn(ev) {
   ev.preventDefault();
-  console.log("Mis datos", getUserData());
-
-  const url =
-    "https://profileawesome.herokuapp.com/card";
+  shareContainer.classList.remove("hidden");
+  const url = "https://awesome-profile-cards.herokuapp.com/";
   const data = getUserData();
-
+  
   fetch(url, {
     method: "POST",
     body: JSON.stringify(data),
@@ -21,17 +19,21 @@ function handleCreateBtn(ev) {
     },
   })
     .then((response) => response.json())
-    .then((data) => {
-      console.log("Server response:", data);
-      if (data.success === true) {
-        cardResultElement.innerHTML = data.cardURL;
-        urlShareElement.innerHTML = data.cardURL; //para que pinte en la interfaz
-        shareContainer.classList.remove("hidden");
-      } else {
-        cardResultElement.innerHTML = data.error;
-        urlShareElement.innerHTML = "ERROR. No se ha podido crear la tarjeta";
-      }
-    });
+    .then(handleData)
+    .then(disableBtn);
+  
+}
+createBtn.addEventListener("click", handleCreateBtn);
+
+function disableBtn() {
+  createBtn.disable = true;
 }
 
-createBtn.addEventListener("click", handleCreateBtn);
+function handleData(data) {
+  if (data.success === true) {
+    cardResultElement.innerHTML = data.cardURL;
+    cardResultElement.href = data.cardURL;
+  } else {
+    cardResultElement.innerHTML = data.error;
+  }
+}
