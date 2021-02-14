@@ -17,9 +17,18 @@
 @media all and (min-width: 768px) {
 	.page__header {
 		align-items: flex-start;
+		padding-left: 40px;
+		max-width: 1200px;
 	}
 	.page__header--logo {
 		width: 201px;
 		margin-left: 40px;
+	}
+	@media all and (min-width: 1024px) {
+		.page__header {
+			align-items: flex-start;
+			padding-left: 0px;
+			max-width: 1200px;
+		}
 	}
 }
