@@ -7,10 +7,11 @@
 	margin: 30px 0 30px 40px;
 	max-width: 1500px;
 	margin: 0 auto;
+	height: 7 rem;
 }
 
 .page__header--logo {
-	padding: 30px 0 30px 0px;
+	padding: 20px 0 20px 0px;
 	width: 201px;
 }
 
@@ -21,7 +22,7 @@
 		max-width: 1200px;
 	}
 	.page__header--logo {
-		width: 201px;
+		width: 150px;
 		margin-left: 40px;
 	}
 	@media all and (min-width: 1024px) {
