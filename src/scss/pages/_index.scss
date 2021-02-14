@@ -6,10 +6,10 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
 	background-color: $backgroundLanding;
 	padding: 0 35px 0;
-	height: 85vh;
+	height: 100vh;
 
 	&__content {
 		display: flex;
@@ -24,8 +24,6 @@
 	}
 
 	&__content--subtitle {
-		width: 223px;
-		height: 24px;
 		margin: 0 22.9px 5px 22.1px;
 		font-family: $fontMerriweather;
 		font-size: 19.2px;
@@ -83,38 +81,36 @@
 @media (min-width: 768px) {
 	.main__content--logo {
 		width: 350px;
+	}
+	.main__content--subtitle {
+		font-size: 24px;
+		font-weight: 900;
+		font-family: $fontMerriweather;
+	}
 
-		&__content--subtitle {
-			width: 278px;
-			height: 31px;
-			font-size: 24px;
-			font-weight: 900;
-		}
+	.main__content--text {
+		width: 331px;
+		height: 48px;
+		font-size: 16px;
+	}
 
-		&__content--text {
-			width: 331px;
-			height: 48px;
-			font-size: 16px;
-		}
+	.main__actions {
+		width: 325px;
+		height: 86px;
+		border-radius: 5px;
+		border: 2px solid rgba(225, 115, 52, 0.21);
+		margin: 27px 47px 0;
+		padding: 15px 20px 22px;
+		font-size: 28px;
+	}
 
-		&__actions {
-			width: 325px;
-			height: 86px;
-			border-radius: 5px;
-			border: 2px solid rgba(225, 115, 52, 0.21);
-			margin: 27px 47px 0;
-			padding: 15px 20px 22px;
-			font-size: 28px;
-		}
+	.main__actions--textIcons {
+		font-size: 16px;
+		color: $metal;
+	}
 
-		&__actions--textIcons {
-			font-size: 16px;
-			color: $metal;
-		}
-
-		&__content--button {
-			margin-bottom: 60px;
-			padding: 12px 20.5px 10px 19.5px;
-		}
+	.main__content--button {
+		margin-bottom: 60px;
+		padding: 12px 20.5px 10px 19.5px;
 	}
 }
