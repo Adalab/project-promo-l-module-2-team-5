@@ -152,20 +152,23 @@
 }
 .preview .preview__container.typography-2 {
 	.preview__container--h2 {
-		font-family: $fontCabinTypo;
+		font-family: $fontCabin;
+		font-size: 18px;
 	}
 	.preview__container--h3 {
-		font-family: $fontCabinTypo;
+		font-family: $fontCabin;
+		font-size: 16px;
 	}
 }
 
 .preview .preview__container.typography-3 {
 	.preview__container--h2 {
-		font-family: $fontZillaTypo;
-		font-weight: 500;
+		font-family: $fontLemon;
+		font-size: 16px;
 	}
 	.preview__container--h3 {
-		font-family: $fontZillaTypo;
+		font-family: $fontLemon;
 		font-weight: 500;
+		font-size: 12px;
 	}
 }
