@@ -1,71 +1,72 @@
 .share-container {
-	display: flex;
-	justify-content: center;
-	border-bottom: 1px solid $colorFooter;
-	margin: 30px 0 30px 0;
-	padding: 30px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $colorFooter;
+  margin: 30px 0 30px 0;
+  padding: 30px;
 }
 .collapsable__share {
-	background-color: $orange;
-	width: 199px;
-	height: 50px;
-	border-radius: 12px;
-	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-	padding: 10px 17px 40px 17px;
-	font-family: $fontOpen;
-	font-size: 15px;
-	color: $colorWhite;
-	text-transform: uppercase;
+  background-color: $orange;
+  width: 199px;
+  height: 50px;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  padding: 10px 17px 40px 17px;
+  font-family: $fontOpen;
+  font-size: 15px;
+  color: $colorWhite;
+  text-transform: uppercase;
 
-	&--icon {
-		width: 25px;
-		height: 22px;
-		margin: 2px 9px 1px 0;
-		font-size: 22px;
-		color: $colorWhite;
-	}
+  &--icon {
+    width: 25px;
+    height: 22px;
+    margin: 2px 9px 1px 0;
+    font-size: 22px;
+    color: $colorWhite;
+  }
 }
-// .share-preview-container {
-// 	border-bottom: 1px solid $colorFooter;
-// 	margin: 30px 0 30px 0;
-// }
+/* .share-preview-container {
+  border-bottom: 1px solid $colorFooter;
+  margin: 30px 0 30px 0;
+} */
 
 .share-card {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 
-	&__title {
-		font-family: $fontOpen;
-		font-size: 18px;
-		font-weight: 600;
-		color: $metal;
-		margin: 20px 0 5px;
-	}
-	&__link {
-		font-family: $fontOpen;
-		font-size: 12px;
-		color: $orange;
-		margin-bottom: 10px;
-	}
-	&__button {
-		background-color: #00a0f5;
-		width: 181px;
-		height: 30px;
-		border-radius: 3px;
-		box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-		padding: 7px 9px 6px 10.5px;
-		font-family: $fontOpen;
-		font-size: 14px;
-		color: $colorWhite;
-		margin: 0 0 1px 9.5px;
-		text-align: center;
-		margin-bottom: 30px;
-	}
+  &__title {
+    font-family: $fontOpen;
+    font-size: 18px;
+    font-weight: 600;
+    color: $metal;
+    margin: 20px 0 5px;
+  }
+  &__link {
+    font-family: $fontOpen;
+    font-size: 12px;
+    color: $orange;
+    margin-bottom: 10px;
+  }
+  &__button {
+    background-color: #00a0f5;
+    width: 181px;
+    height: 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    padding: 7px 9px 6px 10.5px;
+    font-family: $fontOpen;
+    font-size: 14px;
+    color: $colorWhite;
+    margin: 0 0 1px 9.5px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-style: none;
+  }
 }
 
 .hidden {
-	display: none;
+  display: none;
 }

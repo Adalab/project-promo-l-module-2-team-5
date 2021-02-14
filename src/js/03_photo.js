@@ -21,41 +21,20 @@ function getImage(e) {
   fr.readAsDataURL(myFile);
 }
 
-/**
- * Una vez tenemos los datos listos en el FR podemos
- * trabajar con ellos ;)
- */
 function writeImage() {
-  /* En la propiedad `result` de nuestro FR se almacena
-   * el resultado. Ese resultado de procesar el fichero que hemos cargado
-   * podemos pasarlo como background a la imagen de perfil y a la vista previa
-   * de nuestro componente.
-   */
-
   photo = fr.result;
   updatePhoto();
-  // después de cualquier acción del usuario guardo en el local storage
   saveInLocalStorage();
 }
 function updatePhoto() {
-  const currentPhoto = photo || 'https://media.giphy.com/media/jnEQ1YoSLy9gSic7Qv/giphy.gif'; //"./assets/images/icono-mujer.png ";
+  const currentPhoto =
+    photo || "https://media.giphy.com/media/jnEQ1YoSLy9gSic7Qv/giphy.gif";
   profilePreview.style.backgroundImage = `url(${currentPhoto})`;
   profileImage.setAttribute("src", currentPhoto);
-  /*   profilePreview.style.backgroundImage = `url(${fr.result})`;
-  profileImage.setAttribute("src", fr.result); */
 }
-/**
- * Genera un click automático en nuesto campo de tipo "file"
- * que está oculto
- */
+
 function fakeFileClick() {
   fileField.click();
 }
-
-/**
- * Añadimos los listeners necesarios:
- * - al botón visible para generar el click automático
- * - al campo oculto para cuando cambie su value
- */
 uploadBtn.addEventListener("click", fakeFileClick);
 fileField.addEventListener("change", getImage);
