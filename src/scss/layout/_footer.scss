@@ -13,7 +13,16 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 18px 61px 20px;
+	padding: 18px 40px 20px;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 18px 0 20px 0;
+		align-content: center;
+		max-width: 1500px;
+	}
 
 	&__copy {
 		font-family: $fontOpen;
@@ -41,5 +50,10 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+	}
+	@media (min-width: 1024px) {
+		.footer__container {
+			margin-left: 80px;
+		}
 	}
 }
