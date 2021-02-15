@@ -28,7 +28,7 @@ function writeImage() {
 }
 function updatePhoto() {
   const currentPhoto =
-    photo || "https://media.giphy.com/media/jnEQ1YoSLy9gSic7Qv/giphy.gif";
+    photo || "https://media.giphy.com/media/pH7zVFpsSU1mkk7cLV/giphy.gif";
   profilePreview.style.backgroundImage = `url(${currentPhoto})`;
   profileImage.setAttribute("src", currentPhoto);
 }
