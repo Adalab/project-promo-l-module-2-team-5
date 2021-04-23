@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const twitterElement = document.querySelector(".js-twitter-btn");
 const twitterLinkElement = document.querySelector(".js-twitter-link");

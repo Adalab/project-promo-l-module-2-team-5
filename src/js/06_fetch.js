@@ -3,7 +3,6 @@
 "use strict";
 
 const createBtn = document.querySelector(".js-create-btn");
-// const cardResultElement = document.querySelector(".js-card-result");
 const urlShareElement = document.querySelector(".js-share__link");
 const shareContainer = document.querySelector(".js-share__container");
 const createBtnContainer = document.querySelector(".js-createbtn-container");
@@ -13,8 +12,6 @@ let linkUrl = '';
 
 function handleCreateBtn(ev) {
   ev.preventDefault();
-  // console.log("Mis datos", getUserData());
-
   const url = "https://profileawesome.herokuapp.com/card";
   const data = getUserData();
 
@@ -27,7 +24,6 @@ function handleCreateBtn(ev) {
   })
     .then((response) => response.json())
     .then((data) => {
-      //   console.log("Server response:", data);
       if (data.success === true) {
         data.cardURL;
         linkUrl = data.cardURL;

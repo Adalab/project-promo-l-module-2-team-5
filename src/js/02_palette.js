@@ -22,7 +22,6 @@ function updateTypo() {
   const checkedTypo = document.querySelector(".js-typo:checked");
   const checkedTypoValue = checkedTypo.value;
   cardElement.classList.add("typography-" + checkedTypoValue);
-  // console.log(checkedTypoValue);
   saveInLocalStorage();
 }
 
