@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 "use strict";
 
 const paletteElements = document.querySelectorAll(".js-palette");
@@ -21,7 +22,7 @@ function updateTypo() {
   const checkedTypo = document.querySelector(".js-typo:checked");
   const checkedTypoValue = checkedTypo.value;
   cardElement.classList.add("typography-" + checkedTypoValue);
-  console.log(checkedTypoValue);
+  // console.log(checkedTypoValue);
   saveInLocalStorage();
 }
 
